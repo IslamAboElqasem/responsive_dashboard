@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/views/widgets/all_epences_header.dart';
 
 class AllExpences extends StatelessWidget {
   const AllExpences({super.key});
@@ -14,7 +15,7 @@ class AllExpences extends StatelessWidget {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12))),
         child: const Column(
-          children: [],
+          children: [AllEpensesHeader()],
         ),
       ),
     );

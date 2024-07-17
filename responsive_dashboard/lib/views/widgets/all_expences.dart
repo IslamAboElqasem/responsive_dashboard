@@ -3,30 +3,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences_header.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences_Item_list_view.dart';
+import 'package:responsive_dashboard/views/widgets/custom_background_container.dart';
 
 class AllExpences extends StatelessWidget {
-  const AllExpences({super.key});
+  const AllExpences({super.key, this.padding});
+  final double? padding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 40),
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        decoration: ShapeDecoration(
-            color: const Color(0xFFFFFFFF),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12))),
-        child: const Column(
-          children: [
-            AllExpensesHeader(),
-            SizedBox(
-              height: 16,
-            ),
-            AllExpencesItemListView()
-          ],
-        ),
-      ),
-    );
+        padding: EdgeInsets.all(padding == null ? 20 : 24),
+        child: const CustomBackgroundContainer(
+          child: Column(
+            children: [
+              AllExpensesHeader(),
+              SizedBox(
+                height: 16,
+              ),
+              AllExpencesItemListView()
+            ],
+          ),
+        ));
   }
 }

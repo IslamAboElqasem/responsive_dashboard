@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utilis/app_styles.dart';
 import 'package:responsive_dashboard/views/widgets/select_months.dart';
 
-class AllEpensesHeader extends StatelessWidget {
-  const AllEpensesHeader({super.key});
+class AllExpensesHeader extends StatelessWidget {
+  const AllExpensesHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

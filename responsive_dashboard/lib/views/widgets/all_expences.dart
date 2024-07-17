@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:responsive_dashboard/views/widgets/all_epences_header.dart';
+import 'package:responsive_dashboard/views/widgets/all_expences_header.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences_Item_list_view.dart';
 
 class AllExpences extends StatelessWidget {
@@ -19,7 +19,7 @@ class AllExpences extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12))),
         child: const Column(
           children: [
-            AllEpensesHeader(),
+            AllExpensesHeader(),
             SizedBox(
               height: 16,
             ),

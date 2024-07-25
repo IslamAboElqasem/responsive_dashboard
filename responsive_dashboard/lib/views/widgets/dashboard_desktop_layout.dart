@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:responsive_dashboard/views/widgets/all_expences.dart';
+import 'package:responsive_dashboard/views/widgets/all_expences_and_quick_invoice.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
-import 'package:responsive_dashboard/views/widgets/quick_invoice.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -22,18 +21,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         child: CustomScrollView(slivers: [
           SliverFillRemaining(
             hasScrollBody: false,
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 40,
-                ),
-                AllExpences(),
-                SizedBox(
-                  height: 24,
-                ),
-                QuickInvoice()
-              ],
-            ),
+            child: AllExpencesAndQuickInvoice(),
           )
         ]),
       )

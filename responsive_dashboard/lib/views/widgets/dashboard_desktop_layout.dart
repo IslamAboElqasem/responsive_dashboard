@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences.dart';
@@ -23,6 +24,9 @@ class DashboardDesktopLayout extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
+                SizedBox(
+                  height: 40,
+                ),
                 AllExpences(),
                 SizedBox(
                   height: 24,

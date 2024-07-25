@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences_and_quick_invoice.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
+import 'package:responsive_dashboard/views/widgets/my_card.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -24,7 +25,11 @@ class DashboardDesktopLayout extends StatelessWidget {
             child: AllExpencesAndQuickInvoice(),
           )
         ]),
-      )
+      ),
+      SizedBox(
+        width: 24,
+      ),
+      Expanded(child: MyCard())
     ]);
   }
 }

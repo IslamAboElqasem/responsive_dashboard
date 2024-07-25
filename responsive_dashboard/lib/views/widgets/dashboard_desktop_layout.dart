@@ -18,15 +18,20 @@ class DashboardDesktopLayout extends StatelessWidget {
       ),
       Expanded(
         flex: 2,
-        child: Column(
-          children: [
-            AllExpences(),
-            SizedBox(
-              height: 24,
+        child: CustomScrollView(slivers: [
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                AllExpences(),
+                SizedBox(
+                  height: 24,
+                ),
+                QuickInvoice()
+              ],
             ),
-            QuickInvoice()
-          ],
-        ),
+          )
+        ]),
       )
     ]);
   }

@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/all_expences_and_quick_invoice.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard/views/widgets/my_card_section.dart';
+import 'package:responsive_dashboard/views/widgets/transaction_history.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -29,7 +30,20 @@ class DashboardDesktopLayout extends StatelessWidget {
       SizedBox(
         width: 24,
       ),
-      Expanded(child: MyCardSection())
+      Expanded(
+          child: Column(
+        children: [
+          SizedBox(
+            height: 40,
+          ),
+          MyCardSection(),
+          Divider(
+            height: 20,
+            color: Color(0xFFF1F1F1),
+          ),
+          TransactionHistory()
+        ],
+      ))
     ]);
   }
 }

@@ -17,6 +17,7 @@ class _MyCardSectionState extends State<MyCardSection> {
 
   @override
   void initState() {
+    super.initState();
     pageController = PageController();
     pageController.addListener(
       () {

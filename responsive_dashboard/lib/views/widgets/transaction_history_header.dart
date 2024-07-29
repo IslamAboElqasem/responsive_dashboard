@@ -17,7 +17,8 @@ class TransactionHistoryHeader extends StatelessWidget {
         const Spacer(),
         Text(
           'See all',
-          style: AppStyles.styleMedium16(context),
+          style: AppStyles.styleMedium16(context)
+              .copyWith(color: const Color(0xFF4EB7F2)),
         )
       ],
     );
